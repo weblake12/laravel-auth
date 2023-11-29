@@ -1,7 +1,7 @@
 <?php
 
-use App\Http\Controllers\LoginController;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\Admin\HomeController As AdminHomeController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -16,12 +16,11 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', [HomeController::class, 'home'])->name('home');
-Route::get('login', [LoginController::class, 'login'])->name('login');
-Route::post('login', [LoginController::class, 'auth'])->name('login.auth');
+
+require __DIR__.'/auth.php';
 
 Route::group(['middleware' => 'auth', 'prefix' => 'admin'], function () {
-    Route::post('logout', [LoginController::class, 'logout'])->name('logout');
     Route::namespace('Admin')->group(function () {
-        Route::get('home', [App\Http\Controllers\Admin\HomeController::class, 'home'])->name('admin.home');
+        Route::get('home', [AdminHomeController::class, 'home'])->name('admin.home');
     });
 });
