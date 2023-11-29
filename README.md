@@ -33,7 +33,7 @@ composer update
 ```
 
 ## Laravel Auth author
-Laravel Auth is used by **[Lionel AKE](https://lionel-ake.com)**
-Lionel AKE website [https://lionel-ake.com](https://lionel-ake.com)
-Lionel AKE medium [https://medium.com/@lionel.ake](https://medium.com/@lionel.ake)
-Lionel AKE youtube [https://youtube.com/channel/lionel.ake](https://youtube.com/channel/lionel.ake)
+Laravel Auth is used by **[Lionel AKE](https://lionel-ake.com)**<br>
+Lionel AKE website [https://lionel-ake.com](https://lionel-ake.com)<br>
+Lionel AKE medium [https://medium.com/@lionel.ake](https://medium.com/@lionel.ake)<br>
+Lionel AKE youtube [https://youtube.com/channel/lionel.ake](https://youtube.com/channel/lionel.ake)<br>
